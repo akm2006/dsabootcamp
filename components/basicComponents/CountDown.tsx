@@ -79,8 +79,8 @@ const Countdown = () => {
       {/* Countdown Timer */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {Object.entries(timeLeft).map(([label, value]) => (
-          <div key={label} className="bg-white p-8 rounded-xl shadow-md transform hover:scale-105 transition duration-300 border-2 border-green-300">
-            <div className="text-5xl font-bold text-green-700">{value}</div>
+          <div key={label} className="bg-white p-8 rounded-xl shadow-md transform hover:scale-105 transition duration-300 border-2 border-green-600">
+            <div className="text-5xl font-bold text-blue-700">{value}</div>
             <div className="text-sm text-gray-600 font-semibold">{label.charAt(0).toUpperCase() + label.slice(1)}</div>
           </div>
         ))}
