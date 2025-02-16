@@ -10,7 +10,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center px-4 sm:px-8 md:px-12">
+    <section className="relative flex flex-col pb-4 items-center justify-center w-screen text-center px-4 sm:px-8 md:px-12">
       {/* Animated Background */}
       <div
         className="absolute inset-0 bg-gradient-to-r animate-[gradientAnimation_6s_infinite_alternate] opacity-90"
@@ -42,7 +42,7 @@ const HeroSection = () => {
         </div>
 
         {/* Register Button - Now Smaller & Black */}
-        <div className="mt-2 z-30">
+        <div className="mt-4 z-30">
           <a
             href="https://lu.ma/rm1ln6ks"
             target="_blank"
