@@ -46,11 +46,11 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="py-16 px-4 min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <section className="py-16 px-4 w-screen bg-gradient-to-b from-green-50 to-white">
       <div className="max-w-4xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent transform transition-all duration-300 hover:scale-105">
+          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-b text-center from-blue-900 to-blue-600 bg-clip-text text-transparent transform transition-all duration-300 hover:scale-105">
             Frequently Asked Questions
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
@@ -65,11 +65,11 @@ export default function FAQSection() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg"
+                className="bg-white my-10 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg"
               >
                 <button
                   onClick={() => setExpandedIndex(isOpen ? null : index)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left focus:outline-none"
+                  className="w-full px-6 h-1 py-4 flex items-center justify-between text-left focus:outline-none"
                   aria-expanded={isOpen}
                 >
                   <h3 className="text-lg md:text-xl font-semibold text-green-700">
@@ -85,7 +85,7 @@ export default function FAQSection() {
                 {/* Answer with Smooth Height Transition */}
                 <div
                   className={`grid transition-all duration-300 ease-in-out overflow-hidden ${
-                    isOpen ? "grid-rows-[1fr] opacity-100 py-4 px-6" : "grid-rows-[0fr] opacity-0"
+                    isOpen ? "grid-rows-[1fr] opacity-100 py-4 px-6 h-fit" : "h-10 grid-rows-[0fr] opacity-0"
                   }`}
                 >
                   <p className="text-gray-600">{faq.answer}</p>
