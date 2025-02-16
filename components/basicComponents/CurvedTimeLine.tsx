@@ -15,13 +15,13 @@ const timelineEvents = [
 
 export default function ModernTimeline() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-200 via-green-300 to-green-200 animate-gradient text-green-900 py-20 px-6">
+    <div className="min-h-screen bg-gradient-to-r from-green-200 via-green-400 to-green-500 animate-gradient text-green-900 py-20 px-6">
       <div className="max-w-7xl mx-auto mb-20 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold bg-gradient-to-t from-black to-green-400 bg-clip-text text-transparent"
+          className="text-4xl font-bold bg-gradient-to-b from-blue-900 to-blue-600 bg-clip-text text-transparent"
         >
           Your journey to mastering Data Structures & Algorithms
         </motion.h1>
